@@ -1,7 +1,7 @@
 // 🔍 Part 1 error
 let userName = "Moroni";
 console.log(`Username: ${userName}`);
-let userName = "Moronihah";
+userName = "Moronihah";
 console.log(`Username: ${userName}`);
 
 // 🔍 Part 2 error
@@ -16,7 +16,7 @@ console.log(`The total is ${theTotal}`);
 // 'total' function declaration
 function total(...theNumbers) {
 	let sum = 0;
-	for (let aNumber in theNumbers) {
+	for (let aNumber of theNumbers) {
 		sum += aNumber * 1; // Why do we use * 1? It implicitly converts a string to a number.
 	}
 	return sum
