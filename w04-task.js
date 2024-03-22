@@ -60,37 +60,38 @@ myProfile.hobbies.forEach(hobbies => {
 /* Places Lived DataList */
 myProfile.placesLived = [
     {
-        places: "Kaplan, LA",
+        place: "Kaplan, LA", 
         length: "3 years"
     },
+
     {
-        places: "Baton Rouge, LA",
+        place: "Baton Rouge, LA", 
         length: "10 years"
     }, 
+
     {
-        places:"Rexburg, ID",
+        place:"Rexburg, ID", 
         length: "2 years"
     },
+
     {
-        places: "Richmond, Va",
+        place: "Richmond, Va",
         length: "5 years"
     },
+
     {
-        places: "Sandy River, Va", 
+        place: "Sandy River, Va",
         length: "5 years"
     }
 ]
 
-myProfile.placesLived.forEach((placesLived) => {
-    let placesLivedPlace = document.createElement('dt' );
-    placesLivedPlace.textcontent = placesLived.place;
-
+myProfile.placesLived.forEach((placeLived) => {
+    let placesLivedPlace = document.createElement('dt');
+    placesLivedPlace.textContent = placeLived.place; 
+     
+    let placesLivedLength = document.createElement('dd')
+    placesLivedLength.textContent = placeLived.length
+   
     document.querySelector('#places-lived').appendChild(placesLivedPlace);
-
-    let placesLivedLength = document.createElement('dd');
-    placesLivedLength.textContent = placesLived.length; 
-
-    document.querySelector('#places-lived').appendChild(placesLivedPlace); 
-    document.querySelector('#places-lived').appendChild(placesLivedLength);
-
+    document.querySelector("#places-lived").appendChild(placesLivedLength);
 })
