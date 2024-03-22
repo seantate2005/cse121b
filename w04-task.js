@@ -16,7 +16,7 @@ let myProfile = {
             "Desserts", 
             "Pie"
         ],
-    hobbis: 
+    hobbies: 
         [
         "Cooking",
         "Singing",
