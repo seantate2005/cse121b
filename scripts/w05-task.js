@@ -1,41 +1,57 @@
-/* W05: Programming Tasks */
+const url =
+	"https://byui-cse.github.io/cse121b-ww-course/resources/temples.json";
+let results = null; 
 
-/* Declare and initialize global variables */
-const templesElement = document.getElementById("");
-var templeList = [];
-/* async displayTemples Function */
-const displayTemples = (temples) => {
+const getTemples = async (filter = "all") => {
+	let temples = await jsonFetch(url);
 
-}
-
-const output = (temples) => {
-    let article = document.createElement("article"); 
-    let templeName = document.createElement("h3")
-    let img = document.createElement("img");
-    img.setAttribute("src", temple.imageURL);
-    img.setAttribute{"alt", temple.templeName};
-
-    templesElement.appendChild(templeName);
-    templesElement.appendChild(img); 
-    templesElement.appendChild(article);
-    document.querySelector("#temples").appendChild(article);
-}
-
-/* async getTemples Function using fetch()*/
-
-const getTemples = async() => {
-    const response = await fetch("https://byui-cse.github.io/cse121b-ww-course/resources/temples.json");
-    templeList = await response.json();
-    output(templeList);
+	displayTemples(temples);
 };
 
-console.log(templeList)
+async function getTemples(url) {
+	const response = await fetch(url);
+	const data = await response.json();
+	return data.temples;
+}
+
+const displayTemples = (temples) => {
+	const temples = document.querySelector("div.temples");
+	temples.innerHTML = "";
+
+	temples.forEach((temple) => {
+		let temples = document.createElement("article");
+		let h3 = document.createElement("h3");
+		let portrait = document.createElement("img");
+
+		h3.textContent = '${temple.templeName}';
+		portrait.setAttribute("src", temple.imageurl);
+		portrait.setAttribute("alt", '${temple.location}');		
+
+        templeElement.appendChild(article);
+		article.appendChild(H3);
+        article.appendChild(img);
+	}); 
+}
+
+function filterTemples(temples){
+    reset(); 
+    let filter = document.getElementById('filtered').ariaValueMax;
+
+    switch (filter) {
+		case "utah":
+			temples = temples.filter((temple) => temple.location === "Utah");
+			break;
+		case "notutah":
+			temples = temples.filter((temple) => temple.location != "Utah");
+			break;
+		case "older":
+			temples = temples.filter((temples) => temples.dedicated >= 75);
+			break;
+		default:
+			break;
+	}
+
+}
+
+document.querySelector("#filtered").addEventListener("change", () => {filterTemples(templeList)});
 getTemples();
-/* reset Function */
-
-
-/* filterTemples Function */
-
-
-
-/* Event Listener */
