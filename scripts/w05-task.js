@@ -1,70 +1,58 @@
 const url = "https://byui-cse.github.io/cse121b-ww-course/resources/temples.json";
 let templeList = []
 
-templesElement = document.getElementById('temples');
-const displayTemples = async (temples) => {
-    temples.forEach(temple => { 
-    let templeElement = document.createElement('div'); 
-    document.templesElement.textContent=temple.name; 
-    stats.appendChild(templeElement);
-});
-
-    let stats= document.createElement("div"); 
-      let h3 = document.createElement('h3');
-      h3.textContent = temples.templeName
-      stats.appendChild(h3);
-  
-      let img = document.createElement('img');
-      imageElement.setAttribute ('src', imageUrl);
-      imageElement.setAttribute('alt',location);
-      img.textContent = temples;
-      stats.appendChild(img);
-  
-    };
-
+const temples = document.getElementById('temples');
+const displayTemples = async (temples2) => {
+    temples2.forEach(temple => { 
+    let templeElement = document.createElement('article');
+    let templeName = document.createElement("h3"); 
+    templeName.textContent=temple.templeName 
+    let img = document.createElement('img');
+    img.setAttribute('src', temple.imageUrl);
+    img.setAttribute('alt', temple.location);
+    templeElement.appendChild(templeName);
+    templeElement.appendChild(img);
+    temples.appendChild(templeElement);
+    
+})};
   
   /* async getTemples Function using fetch()*/
-  function results(templeList) {
-    results = templeList;
-    console.log("first: ", results);
-  }
 
   const getTemples = async () => {
     const response = await fetch('https://byui-cse.github.io/cse121b-ww-course/resources/temples.json');
-    const templeList = await response.json();
-    (templeList);
+    templeList = await response.json();
+    displayTemples(templeList);
+    console.log(templeList);
   }
   
-  getTemples();
-  console.log("second: ", results);
   /* reset Function */
-  function reset (){
-    stats.appendChild(article);
+  function reset(){
+    temples.innerHTML=[]; 
   }
   
   /* filterTemples Function */
   function filterTemples(temples){
-    reset(temples);
+    reset();
     let filter = document.querySelector('#filtered').value;
-    switch (filter) {
-      case 4:
-       
-        break;
-   
-      default:
-        break;
-    }
-    displayTemples.filter.forEach(temples =>{
-      let Utah = temples.filter(location);
-      document.querySelector('utah').textContent = Utah.join(', ');
-      let notUtah = temples.filter(location);
-      document.querySelector('notutah').textContent = notUtah.join(', ');
-      let older = temples.filter(Date(1950));
-      document.querySelector('older').textContent = older.split(', ');
-      document.querySelector('all').textContent;
-    })
-  }
+    switch(filter){
+      case "utah":
+        displayTemples(temples.filter (temple => temple.location.includes("Utah")))
+        break
+      case "notutah":
+        displayTemples(temples.filter(temple => !temple.location.includes("Utah")))
+        break
+      case "older":
+        displayTemples((temples.filter(temple => new Date(temple.dedicated) < new Date (1950, 0, 1))))
+        break
+      case "all":
+        displayTemples(temples)
+        break
+ 
+    
+    
+    }}
   
+
   
   
   /* Event Listener */
