@@ -1,4 +1,4 @@
-const url = "recipes/w05-task.json";
+const url = "recipes.json";
 let recipeList = []
 
 const recipes = document.getElementById('recipes');
@@ -6,7 +6,7 @@ const displayRecipes = async (recipes2) => {
     recipes2.forEach(recipe => { 
     let recipeElement = document.createElement('article');
     let recipeName = document.createElement("h3"); 
-    recipeName.textContent=temple.templeName 
+    recipeName.textContent=recipes.recipeName 
     let img = document.createElement('img');
     img.setAttribute('src', recipe.imageUrl);
     img.setAttribute('alt', recipeName.location);
@@ -18,7 +18,7 @@ const displayRecipes = async (recipes2) => {
   
   /* async getTemples Function using fetch()*/
 
-  const getRecipes = async () => {
+    const getRecipes = async () => {
     const response = await fetch('recipes/w05-task.json');
     recipeList = await response.json();
     displayTemples(recipeList);
