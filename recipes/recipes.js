@@ -1,5 +1,5 @@
 const url =
-	"https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
+	"https://github.com/seantate2005/cse121b/blob/main/recipes/recipes.json";
 
 // button elements
 const all = document.querySelector("#all");
