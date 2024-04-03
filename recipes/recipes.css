@@ -2,108 +2,70 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	
 }
 
 body {
-	font-size: 18px;
+	font-size: 20px;
 	font-family: Roboto, Helvetica, sans-serif;
 	color: #f9d404;
+	text-align: center;
+	background-color: green;
+	color:
+}
+img{
+	margin-left: 0px
+	
 }
 
 h1 {
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid yellow;
 	padding: 15px;
-	background-color: rgb(27, 11, 31, 1);
+	background-color: purple
 }
 
 h2 {
 	padding: 0.5rem;
-    color:green
+    color: yellow;
+	text-align: center;
 }
 
-#emessage {
-	visibility: hidden;
-	margin: 1rem;
-	border: 1px solid red;
-	padding: 0.5rem;
-	font-size: 0.8rem;
-	background-color: indianred;
+h3{
+	color: yellow;
+	text-align: center;
+}
+p{
+	color:yellow
+	text-align: center;
 }
 
-nav {
-	display: flex;
-	align-items: center;
-	justify-content: left;
-	border-bottom: 1px solid red;
+h4{
+	color:yellow;
+	text-align:center;
 }
 
 
-.cards {
-	margin-left: 1rem;
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
-	grid-gap: 1rem;
-}
 
-section {
-	margin: 1rem;
-	padding: 1rem;
-	border: 1px solid red;
-	background-color: red;
-	color: green;
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-items: center;
-}
 
-.highlight {
-	color: navy;
-}
 
-section img {
-	width: 240px;
-	height: auto;
-	border: 1px solid #fff;
-	box-shadow: 0 0 20px #fff;
-	margin-top: 1rem;
-}
 
 input,
 select,
 textarea,
 button {
-	padding: 0.5rem;
-	margin: 0.5rem;
-	border: 1px solid rgba(0,0,0,.1);
+	background-color: purple;
+	border: none;
+	color: yellow;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 17px;
+	border-radius: 30%;
 }
 
 .active {
 	color: #fff;
 	background-color: #000;
-}
-
-button:hover {
-	background-color: yellow;
-	color: #000;
-	border: 1px solid rgba(0,0,0,.1);
-}
-
-.stats {
-	margin: 0.5rem;
-	border: 1px solid #fff;
-	padding: 1rem;
-	background-color: #000;
-}
-
-.stats p {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-gap: 0.5rem;
-}
-
-.label {
-	text-align: right;
-	color: yellow;
 }
