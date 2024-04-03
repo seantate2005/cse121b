@@ -1,4 +1,4 @@
-const url = "recipes.json";
+const url = "project.json";
 let recipeList = []
 
 
