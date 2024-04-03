@@ -1,28 +1,41 @@
-<!doctype html>
-<html>  
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CSE 121b | Final Project: Cajun French Restaurant</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
-          rel="stylesheet">
-        <link rel="stylesheet" href="recipes.css">
-      </head>
-<header>
-	<h1>Laissez Bon Temps Rouler</h1>
-  <h2>A Cajun Restaurant</h2>
-</header>
-<nav>
-	<button id="all" class="active">No Filter</button>
-	<button id="appetizer">Appetizers</button>
-	<button id="entree">Entrees</button>
-	<button id="dessert">Desserts</button>
-	<button id="cost">Cost Over $20</button>
-	<button id="cheap">Cost Under $20</button>
-</nav>
-<main>
-	<div class="recipes"></div>
-</main>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me | CSE 121b | W02: Programming Tasks</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="recipes.css">
+</head>
+
+<body>
+  <main id="gridly">
+    <h1>Laissez Les Bon Temps Rouler</h1>
+    <h2>An Authentic Cajun Restaurant</h2>
+
+    <select id="filtered" title="Choose a data filter.">
+      <option value="" disabled selected>Filter Menu</option>
+      <option value="appetizer">Appetizers</option>
+      <option value="entree">Entrees</option>
+      <option value="dessert">Dessert</option>
+      <option value="overtwenty">Over $20</option>
+      <option value="undertwenty">Under $20</option>
+      <option value="all">No Filter</option>
+    </select>
+
+    <div id="recipes">
+    </div>
+  </main>
+  <footer>
+    &copy;<span id="year"></span> | 🍽️ Final Project - Laissez Les Bon Temps Rouler🍽️ | CSE 121b
+  </footer>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+   </script>
+    <script src="recipes.js"></script>
+</body>
 </html>

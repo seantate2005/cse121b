@@ -5,7 +5,7 @@
  "meatType": "chicken and sausage",
  "mealPart": "entree",
  "carb": "rice",
- "cost": "$21.00",
+ "cost": "21",
  "imageUrl": "https://th.bing.com/th?id=OSK.64e7dd7fa4c49a2c35e52cd06dbb6213&w=164&h=149&rs=2&qlt=80&o=6&cdv=1&pid=16.1"
 },
 
@@ -14,7 +14,7 @@
  "meatType": "sausage",
  "mealPart": "side",
  "carb": "rice",
- "cost": "$9.00",
+ "cost": "9",
  "imageUrl": "https://th.bing.com/th?id=OSK.c7860fce3dfa8cc5d150cc9bdb7fecc3&w=164&h=109&rs=2&qlt=80&o=6&cdv=1&pid=16.1"
 },
 
@@ -23,7 +23,7 @@
  "meatType": "none",
  "mealPart": "dessert",
  "carb": "bread",
- "cost": "$13.00",
+ "cost": "13",
  "imageUrl": "https://www.bing.com/aclick?ld=e8pjxj46jbewqx9pFLmJcQizVUCUyxCHFho0LCOkIRMiGsw4hAc3JWGwhXSqEGUBEtxmwfoj_BbK2SClMgif3JiEnKRW148mIfWqeVujsMOaA7cuT9m04W6QRGtDmNW14PJ6PqXvIjgsGC8YEb0YMTV_fHwUDd7WwuMpK4GJYzH-14im5Ae5CM_Nwc6HVIqhCnwrI36A&u=aHR0cHMlM2ElMmYlMmZ3d3cuYnVsa2Fwb3RoZWNhcnkuY29tJTJmYmFuYW5hLWZvc3Rlci1mbGF2b3IlMmYlM2Zza3UlM2RmbGF2b3JzLTMwOCUyNm1zY2xraWQlM2RmZDY4NGM1ODFjMjkxMjI0NDQ2YzJhNTM3ZGNhMzYzZSUyNnV0bV9zb3VyY2UlM2RiaW5nJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV9jYW1wYWlnbiUzZFNob3BwaW5nJTI1MjAlMjU3QyUyNTIwQWxsJTI1MjBQcm9kdWN0cyUyNnV0bV90ZXJtJTNkMTEwMDIwMTAxNjQ5MyUyNnV0bV9jb250ZW50JTNkYWxsJTI1MjBwcm9kdWN0cw&rlid=fd684c581c291224446c2a537dca363e"
 },
 
@@ -32,7 +32,7 @@
  "meatType": "none",
  "mealPart": "dessert",
  "carb": "bread", 
- "cost": "$6.00",
+ "cost": "6",
  "imageUrl": "https://www.bing.com/images/search?view=detailV2&ccid=OkU8WG%2bs&id=4A65A7EE87CF4C76A090696DD03379DF7932E60F&thid=OIP.OkU8WG-sPJwPuAPGooMcAwHaHa&mediaurl=https%3a%2f%2fwww.lovebakesgoodcakes.com%2fwp-content%2fuploads%2f2014%2f02%2fNew-Orleans-King-Cake-square-735x735.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.3a453c586fac3c9c0fb803c6a2831c03%3frik%3dD%252bYyed95M9BtaQ%26pid%3dImgRaw%26r%3d0&exph=735&expw=735&q=king+cake+slice&simid=608000952697903135&FORM=IRPRST&ck=58DA6CD5B8E8986A59F79157D45049F9&selectedIndex=14&itb=0"
 },
 
@@ -41,7 +41,7 @@
  "meatType": "seafood",
  "mealPart": "entree",
  "carb": "rice",
- "cost": "$19.00",
+ "cost": "19",
  "imageUrl": "https://th.bing.com/th/id/OIP.HpUAYvQDELwz2rdpbCtX9gHaHa?w=187&h=186&c=7&r=0&o=5&pid=1.7"
 },
 
@@ -50,7 +50,7 @@
  "meatType": "none",
  "mealPart": "dessert",
  "carb": "bread",
- "cost": "$7.00",
+ "cost": "7",
  "imageUrl": "https://th.bing.com/th/id/OIP.CUvlOwLjg60Z9_ROY0wtoAHaLH?w=116&h=180&c=7&r=0&o=5&pid=1.7"
 },
 
@@ -59,7 +59,7 @@
  "meatType": "seafood",
  "mealPart": "entree",
  "carb": "flour",
- "cost": "$24.00",
+ "cost": "24",
  "imageUrl": " https://th.bing.com/th/id/OIP.UPLbRwnOszZ98E5bKnSA-AHaEk?w=310&h=191&c=7&r=0&o=5&pid=1.7"
 },
 
@@ -68,7 +68,7 @@
  "meatType": "shrimp",
  "mealPart":"entree",
  "carb": "rice",
- "cost":"$21.00",
+ "cost":"21",
  "imageUrl":"https://th.bing.com/th/id/OIP.1qi6rX2HplJrutUXPSBwwQHaLH?w=186&h=279&c=7&r=0&o=5&pid=1.7"
 },
 
@@ -77,7 +77,7 @@
  "meatType": "seafood",
  "mealPart": "appetizer",
  "carb": "rice",
- "cost": "$9.00",
+ "cost": "9",
  "imageUrl": "https://th.bing.com/th/id/OIP.xETtUZJ_XmOGBZBLXNRM9QHaEz?w=302&h=196&c=7&r=0&o=5&pid=1.7"
 },
 
@@ -86,7 +86,7 @@
  "meatType": "seafood",
  "mealPart": "entree",
  "carb": "bread",
- "cost": "$14.00",
+ "cost": "14",
  "imageUrl": "https://th.bing.com/th/id/OIP.Ye7I0stibnCCSL6xI-fEpAHaLH?w=129&h=194&c=7&r=0&o=5&pid=1.7"
 },
 
@@ -95,7 +95,7 @@
  "meatType": "chicken",
  "mealPart": "entree",
  "carb": "pasta",
- "cost": "$18.00",
+ "cost": "18",
  "imageUrl": "https://th.bing.com/th/id/OIP.Nq6kKnr_PBiULgJPSL2kWQHaL2?w=186&h=299&c=7&r=0&o=5&pid=1.7"
 },
 
@@ -104,7 +104,7 @@
  "meatType": "sausage",
  "mealPart": "appetizer",
  "carb": "rice",
- "cost": "6.00",
+ "cost": "6",
  "imageUrl":"https://th.bing.com/th/id/OIP.Kl6oyGJOBeGJ1ieWhP3ZoAHaEw?w=261&h=180&c=7&r=0&o=5&pid=1.7"
 },
 
@@ -113,7 +113,7 @@
  "meatType": "seafood",
  "mealPart": "appetizer",
  "carbs": "bread",
- "cost": "$5.00",
+ "cost": "5",
  "imageUrl": "https://th.bing.com/th/id/OIP.IYqBKUOsR4HrG2jLvETWZwHaE7?w=274&h=183&c=7&r=0&o=5&pid=1.7"
 },
 
@@ -122,7 +122,7 @@
  "meatType": "variety",
  "mealPart": "entree",
  "carb": "bread",
- "cost": "$9.00",
+ "cost": "9",
  "imageUrl":"https://th.bing.com/th?id=OIP.NKY67kDNji51E19iboXMvgHaFj&w=298&h=204&c=12&rs=1&qlt=99&pcl=faf9f7&bgcl=fffffe&r=0&o=6&pid=MultiSMRSV2Source"
 },
 
@@ -131,7 +131,7 @@
  "meatType": "chicken",
  "mealPart": "entree",
  "carb": "breading",
- "cost": "$13.00",
+ "cost": "13",
  "imageUrl": "https://images.media-allrecipes.com/userphotos/9367559.jpg"
 },
 
@@ -140,7 +140,7 @@
  "meatType": "none",
  "carb": "bread",
  "mealPart": "dessert",
- "cost": "$12.00",
+ "cost": "12",
  "imageUrl": "https://th.bing.com/th/id/OIP.ZjCSI_LYgC921SQ8yd4KfQHaHa?rs=1&pid=ImgDetMain"
 },
 
@@ -149,7 +149,7 @@
  "meatType": "ground beef",
  "carb": "rice",
  "mealPart": "side",
- "cost": "$8.00",
+ "cost": "8",
  "imageUrl": "https://honest-food.net/wp-content/uploads/2018/01/cajun-dirty-rice.jpg"
 },
 
@@ -158,7 +158,7 @@
  "meatType": "seafood",
  "carb" : "Grits",
  "mealPart": "entree", 
- "cost": "$20.00",
+ "cost": "$20",
  "imageUrl": "https://thesuburbansoapbox.com/wp-content/uploads/2021/10/Shrimp-and-Grits-3.jpg"
 },
 
@@ -167,7 +167,7 @@
  "meatType": "chicken and sausage",
  "carb": "pasta",
  "mealPart": "entree",
- "cost": "$18.00",
+ "cost": "18",
  "imageUrl":"https://media.istockphoto.com/id/1306349663/photo/cajun-chicken-fettuccine-pasta-in-a-creamy-sauce-on-white-plate-top-view.jpg?s=612x612&w=0&k=20&c=0JPnhILBCpFzTOBJqwFioNepI8xJT6lHG5wrrU3WCz4="
 },
 
@@ -176,7 +176,7 @@
  "carb": "corn",
  "meatType": "chicken and sausage",
  "mealPart": "entree",
- "cost": "$16.00",
+ "cost": "16",
  "imageUrl":"https://data.thefeedfeed.com/static/2021/06/15/162375002860c8758cc593b.jpg"
 }
 

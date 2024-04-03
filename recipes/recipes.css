@@ -24,7 +24,7 @@ h2 {
 #emessage {
 	visibility: hidden;
 	margin: 1rem;
-	border: 1px solid red
+	border: 1px solid red;
 	padding: 0.5rem;
 	font-size: 0.8rem;
 	background-color: indianred;
