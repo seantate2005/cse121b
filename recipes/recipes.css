@@ -7,24 +7,24 @@
 body {
 	font-size: 18px;
 	font-family: Roboto, Helvetica, sans-serif;
-	color: #fff;
+	color: #f9d404;
 }
 
 h1 {
-	border-bottom: 1px solid #000;
+	border-bottom: 1px solid red;
 	padding: 15px;
 	background-color: rgb(27, 11, 31, 1);
 }
 
 h2 {
 	padding: 0.5rem;
-    color:black
+    color:green
 }
 
 #emessage {
 	visibility: hidden;
 	margin: 1rem;
-	border: 1px solid rgba(0, 0, 0, 0.1);
+	border: 1px solid red
 	padding: 0.5rem;
 	font-size: 0.8rem;
 	background-color: indianred;
@@ -34,7 +34,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: left;
-	border-bottom: 1px solid #bbb;
+	border-bottom: 1px solid red;
 }
 
 
@@ -48,9 +48,9 @@ nav {
 section {
 	margin: 1rem;
 	padding: 1rem;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	background-color: rgb(27, 11, 31, 1);
-	color: #fff;
+	border: 1px solid red;
+	background-color: red;
+	color: green;
 	width: 100%;
 	display: flex;
 	flex-direction: column;

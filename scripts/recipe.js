@@ -1,4 +1,4 @@
-const url = "recipes.json";
+const url = "https://github.com/seantate2005/cse121b/blob/main/recipes/recipes.json";
 let recipeList = []
 
 const recipes = document.getElementById('recipes');
@@ -9,46 +9,47 @@ const displayRecipes = async (recipes2) => {
     recipeName.textContent=recipes.recipeName 
     let img = document.createElement('img');
     img.setAttribute('src', recipe.imageUrl);
-    img.setAttribute('alt', recipeName.location);
-    templeElement.appendChild(recipeName);
-    templeElement.appendChild(img);
+    img.setAttribute('alt', recipeName.mealPart);
+    recipeElement.appendChild(recipeName);
+    recipeElement.appendChild(img);
     recipes.appendChild(recipeElement);
     
 })};
   
-  /* async getTemples Function using fetch()*/
 
     const getRecipes = async () => {
     const response = await fetch('recipes/w05-task.json');
     recipeList = await response.json();
-    displayTemples(recipeList);
+    displayRecipes(recipeList);
     console.log(recipeList);
   }
   
-  /* reset Function */
   function reset(){
     recipes.innerHTML=[]; 
   }
   
-  /* filterTemples Function */
   function filterRecipes(recipes){
     reset();
     let filter = document.querySelector('#filtered').value;
     switch(filter){
-      case "Appetizer":
+      case "appetizer":
         displayRecipes(recipes.filter (recipe => recipe.mealPart.includes("appetizer")))
         break
-      case "Entree":
+      case "entree":
         displayRecipes(recipes.filter(recipe => recipe.mealPart.includes("entree")))
         break
-      case "Dessert":
+      case "dessert":
         displayRecipes((recipes.filter(recipe => recipes.mealPart.includes("dessert")))) 
         break
       case "all":
         displayRecipes(recipes)
         break
- 
-    
+      case "cost":
+        displayRecipes((recipes.filter(recipe => recipe.cost.includes(">$20"))))
+      break 
+      case "cheap":
+        displayRecipes((recipes.filter(recipe => recipe.cost.includes(""))));
+      
     
     }}
   
